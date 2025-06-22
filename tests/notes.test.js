@@ -1,4 +1,4 @@
-// ✅ Use require instead of import (CommonJS style)
+const BASE_URL='https://notes-api-86g0.onrender.com';
 const request = require('supertest');
 const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
@@ -19,7 +19,7 @@ beforeAll(async () => {
 
   app = express();
   app.use(express.json());
-  app.use('/api/notes', notesRouter);
+  app.use(BASE_URL, notesRouter);
 });
 
 afterAll(async () => {
@@ -30,7 +30,7 @@ afterAll(async () => {
 describe('Notes API Integration Tests', () => {
   it('should create a new note', async () => {
     const res = await request(app)
-      .post('/api/notes')
+      .post(BASE_URL)
       .send({ title: 'Test Note', content: 'This is a test' });
 
     expect(res.statusCode).toBe(201);
@@ -38,7 +38,7 @@ describe('Notes API Integration Tests', () => {
   });
 
   it('should fetch all notes', async () => {
-    const res = await request(app).get('/api/notes');
+    const res = await request(app).get(BASE_URL);
     expect(res.statusCode).toBe(200);
     expect(Array.isArray(res.body)).toBe(true);
   });

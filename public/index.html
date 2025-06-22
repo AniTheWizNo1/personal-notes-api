@@ -13,11 +13,12 @@
   <ul id="notesList"></ul>
 
   <script>
+    const BASE_URL='https://notes-api-86g0.onrender.com';
     async function createNote() {
       const title = document.getElementById("title").value;
       const content = document.getElementById("content").value;
 
-      const res = await fetch('/api/notes', {
+      const res = await fetch(BASE_URL, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ title, content })
@@ -28,7 +29,7 @@
     }
 
     async function loadNotes() {
-      const res = await fetch('/api/notes');
+      const res = await fetch(BASE_URL);
       const notes = await res.json();
       const list = document.getElementById("notesList");
       list.innerHTML = "";
