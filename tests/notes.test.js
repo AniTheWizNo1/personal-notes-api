@@ -1,4 +1,4 @@
-const BASE_URL='https://notes-api-86g0.onrender.com';
+// ✅ Use require instead of import (CommonJS style)
 const request = require('supertest');
 const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
@@ -19,7 +19,7 @@ beforeAll(async () => {
 
   app = express();
   app.use(express.json());
-  app.use(BASE_URL, notesRouter);
+  app.use('/api/notes', notesRouter);
 });
 
 afterAll(async () => {
@@ -30,7 +30,7 @@ afterAll(async () => {
 describe('Notes API Integration Tests', () => {
   it('should create a new note', async () => {
     const res = await request(app)
-      .post(BASE_URL)
+      .post('/api/notes')
       .send({ title: 'Test Note', content: 'This is a test' });
 
     expect(res.statusCode).toBe(201);
@@ -38,7 +38,7 @@ describe('Notes API Integration Tests', () => {
   });
 
   it('should fetch all notes', async () => {
-    const res = await request(app).get(BASE_URL);
+    const res = await request(app).get('/api/notes');
     expect(res.statusCode).toBe(200);
     expect(Array.isArray(res.body)).toBe(true);
   });
