@@ -15,7 +15,7 @@ A simple API server built with Express.js and MongoDB for managing personal note
 
 ### 🧱 Backend
 
-```bash
+````bash
 npm install
 npm run dev
 
@@ -55,10 +55,14 @@ This project uses **Jest** and **Supertest** for writing tests.
 ```bash
 npm test
 
+## 🧪 Code Coverage Screenshot
+
+![Coverage Report](docs/coverage.png)
+
 ✍️ Author
 Aniket Das
 GitHub: AniTheWizNo1
 
 📝 License
 MIT
-```
+````
