@@ -40,10 +40,20 @@ Edit
 }
 🛠 Tech Stack
 Node.js + Express
-
 MongoDB Atlas
-
 HTML + JS (Optional UI)
+## 🧪 Testing
+
+This project uses **Jest** and **Supertest** for writing tests.
+
+### ✅ Types of Tests
+- **Unit Tests** (mocked MongoDB)
+- **Integration Tests** (real MongoDB using `mongodb-memory-server`)
+- **API Tests** (end-to-end with Supertest)
+
+### 📦 Run Tests
+```bash
+npm test
 
 ✍️ Author
 Aniket Das
