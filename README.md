@@ -57,7 +57,7 @@ npm test
 
 ## 🧪 Code Coverage Screenshot
 
-![Coverage Report](https://github.com/AniTheWizNo1/personal-notes-api/blob/e9eeb401a132ae6d739435ff1c8e413982dc485b/docs/coverage.png)
+![Coverage Report](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/master/docs/coverage.png)
 ## ✅ Keploy API Test Integration
 
 - API tests auto-generated using [Keploy](https://keploy.io)
@@ -65,7 +65,7 @@ npm test
 - [CI Config File](.github/workflows/ci.yml)
 
 ### 🔍 Test Report Screenshot:
-![Keploy Test Output](https://github.com/AniTheWizNo1/personal-notes-api/blob/15085c81ca9211697f48f5d8d00577cf046560e2/docs/TestsRunReport.png)
+![Keploy Test Output](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/master/docs/TestsRunReport.png)
 
 ✍️ Author
 Aniket Das
