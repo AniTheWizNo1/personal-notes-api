@@ -57,7 +57,15 @@ npm test
 
 ## 🧪 Code Coverage Screenshot
 
-![Coverage Report](docs/coverage.png)
+![Coverage Report](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/master/docs/coverage.png)
+## ✅ Keploy API Test Integration
+
+- API tests auto-generated using [Keploy](https://keploy.io)
+- CI/CD Integration using GitHub Actions
+- [CI Config File](.github/workflows/ci.yml)
+
+### 🔍 Test Report Screenshot:
+![Keploy Test Output](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/master/docs/TestsRunReport.png)
 
 ✍️ Author
 Aniket Das
