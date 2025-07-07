@@ -65,7 +65,7 @@ npm test
 - [CI Config File](.github/workflows/ci.yml)
 
 ### 🔍 Test Report Screenshot:
-![Keploy Test Output](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/docs/TestsRunReport.png)
+![Keploy Test Output](https://github.com/AniTheWizNo1/personal-notes-api/blob/15085c81ca9211697f48f5d8d00577cf046560e2/docs/TestsRunReport.png)
 
 ✍️ Author
 Aniket Das
