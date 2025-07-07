@@ -21,4 +21,4 @@ jobs:
     - name: Run Keploy Test Suite
       run: |
         export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
-        keploy test-suite --app=<your_app_id_from_keploy_dashboard> --base-path=http://localhost:8080/api/notes --cloud
+        keploy test-suite --app=f5a9be5d-0d80-4043-81f5-59a1ded665e9 --base-path=http://localhost:8080/api/notes --cloud
