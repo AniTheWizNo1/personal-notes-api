@@ -57,7 +57,7 @@ npm test
 
 ## 🧪 Code Coverage Screenshot
 
-![Coverage Report](https://raw.githubusercontent.com/AniTheWizNo1/personal-notes-api/docs/coverage.png)
+![Coverage Report](https://github.com/AniTheWizNo1/personal-notes-api/blob/e9eeb401a132ae6d739435ff1c8e413982dc485b/docs/coverage.png)
 ## ✅ Keploy API Test Integration
 
 - API tests auto-generated using [Keploy](https://keploy.io)
